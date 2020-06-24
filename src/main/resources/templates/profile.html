@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+    <title>Renewable Energy</title>
+</head>
+<body>
+
+
+
+<main>
+    <header>
+        <h2>Profile</h2>
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"th:href="@{/index}">Home </a></li>
+            <li><a href="profile.html" th:href="@{/profile}"> Profile</a></li>
+            <li><a href="enter.html" th:href="@{/enter}">Calculate</a></li>
+
+
+        </ul>
+    </nav>
+    <article>
+
+
+        <table id="customers">
+
+            <tr>
+                <td>First Name:</td>
+                <td th:text="${collatedUser.getEnergyUser().firstName}"></td>
+
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td th:text="${collatedUser.getEnergyUser().lastName}"></td>
+
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td th:text="${collatedUser.getEnergyUser().email}"></td>
+
+
+
+        </table>
+
+        <table>
+            <tr>
+                <th>Login History</th>
+            </tr>
+            <tr th:each="login : ${collatedUser.logins}">
+                <td th:text="${login.getTime()}"></td>
+            </tr>
+        </table>
+
+</article>
+</main>
+</body>
+
+</html>

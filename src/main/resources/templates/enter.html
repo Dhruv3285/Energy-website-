@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <style> body{background: darkgrey}</style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+    <title>Title</title>
+</head>
+<main>
+<body>
+<header>    <h2>Renewable Energy</h2>
+
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html"th:href="@{/index}">Home </a></li>
+        <li><a href="profile.html" th:href="@{/profile}"> Profile</a></li>
+        <li><a href="enter.html" th:href="@{/enter}">Calculate</a></li>
+
+
+    </ul>
+</nav>
+
+
+<article>
+<div class="form">
+    <p>Energy Usage(Watts): <input type="number" id="x" pattern="[0-9]+"/>
+        <select>
+            <option value="solar">Solar</option>
+            <option value="wind">wind</option>
+            <option value="hydro">hydro</option>
+
+        </select>
+        <label id="result">Cost(£)</label>
+        <button id="calculate" onclick="arithmeticOperation()">Calculate</button></p>
+</div>
+
+</article>
+</body>
+</main>
+</html>

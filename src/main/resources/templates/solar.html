@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+
+<head>
+
+    <style> body{background: darkgrey}</style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+    <title>Title</title>
+</head>
+
+<body>
+<main>
+    <header>
+
+        <h2>Solar</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"th:href="@{/index}">Home </a></li>
+            <li><a href="profile.html" th:href="@{/profile}"> Profile</a></li>
+            <li><a href="enter.html" th:href="@{/enter}">Calculate</a></li>
+
+
+        </ul>
+    </nav>
+    <article>
+        <h2>Introduction</h2>
+        <p>Solar energy is the  <img src="../static/images/solar1.jpg" height="100px" width="120px" ALIGN="right"  th:src="@{/images/solar1.jpg}" alt="hydro"/>technology used to harness the sun's energy and make it useable. As of 2011, the technology produced less than one tenth of one percent of global energy demand</p>
+
+      <h2>Brief History</h2>
+        <ul style="list-style-type:square;">
+            <li>1839: French physicist Alexandre-Edmond Becquerel (father of radioactivity pioneer Henri Becquerel) discovers some metals are photoelectric: they produce electricity when exposed to light.</li>
+            <img src="../static/images/solar2.jpg" height="250px" width="210px" ALIGN="right"  th:src="@{/images/solar2.jpg}" alt="Flute 1"/>
+
+            <li>1905: German-born physicist Albert Einstein figures out the physics of the photoelectric effect, a discovery that eventually earns him a Nobel Prize.</li>
+            <li>1916: American physicist Robert Millikan proves Einstein's theory experimentally.</li>
+        <li>1940: Russell Ohl of Bell Labs accidentally discovers that a doped junction semiconductor will produce an electric current when exposed to light. </li>
+        <li>1958: Vanguard, Explorer, and Sputnik space satellites begin using solar cells. </li>
+<li>2009: Scientists discover that perovskite crystals have great potential as third-generation photovoltaic materials </li>
+<li>2014: A collaboration between German and French scientists produces a new record of 46 percent efficiency for a four-junction solar cell </li>
+<li>2020: Solar cells are predicted to achieve grid parity (solar-generated electricity you make yourself will be as cheap as power you buy from the grid). </li>
+        </ul>
+
+<h2>Stats</h2>
+        <p>  Despite the drawbacks, <img src="../static/images/solar3.jpg" height="100px" width="160px" ALIGN="right"  th:src="@{/images/solar3.jpg}" alt="Flute 1"/> solar energy use has surged at about 20 percent a year over the past 15 years, thanks to rapidly falling prices and gains in efficiency. Japan, Germany, and the United States are major markets for solar cells. With tax incentives, and efficient coordination with energy companies, solar electricity can often pay for itself in five to ten years.
+        </p>
+    </article>
+
+
+    <section class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xKxrkht7CpY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+</main>
+</body>
+</html>

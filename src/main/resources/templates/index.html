@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<script>
+
+
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+    <title>Renewable Energy</title>
+</head>
+<body>
+<mainindex>
+
+    <header>
+
+        <h2>Renewable Energy</h2>
+
+    </header>
+
+    <article>
+        <!-- -->
+     <h2>Renewable generation </h2>
+        <p>
+            Renewable technologies use natural energy to make electricity. Fuel sources include wind, wave, marine, hydro, biomass and solar. It is also made using sources of natural energy that are quickly replaced, such as biomass.
+        </p>
+    <p>
+        Renewables produce more than 20% of the UK’s electricity, and EU targets means that this is likely to increase to 30% by 2020. From 2020, renewable energy will continue to be an important part of the strategy to reduce carbon emissions. To achieve this, a range of technologies will need to be used, such as onshore and offshore wind farms, biomass power stations or hydropower systems.
+    </p>
+        <h2>
+            Wind power
+        </h2>
+        <p>
+            The UK is well placed to take advantage of wind power, with some of the best conditions in Europe and high average wind speeds. Both onshore and offshore wind farms are an important part of where the UK sources its energy. The UK has invested significantly in offshore wind and has installed as much capacity as the rest of the world combined.
+        </p>
+      <h2> Solar</h2>
+<p>Solar photovoltaics are panels that convert the rays of the sun into energy. Current installed capacity exceeds 8.7GW and is increasing rapidly, with year-on-year growth exceeding 80% in 2015 </p>
+   <h2>
+       Marine, wave and hydroelectricity
+   </h2>
+<p>
+    Marine and wave technologies use the energy in the ocean to produce electricity. The marine and wave industries in the UK are at an early stage, but are growing due to several innovative designs. Marine technologies are expected to make a significant contribution to renewable power generation after 2020.
+</p>
+
+
+    </article>
+
+
+
+
+    <nav>
+        <ul>
+            <li><a href="index.html"th:href="@{/index}">Home </a></li>
+            <li><a href="profile.html" th:href="@{/profile}"> Profile</a></li>
+            <li><a href="enter.html" th:href="@{/enter}">Calculate</a></li>
+
+
+        </ul>
+    </nav>
+
+
+
+    <div class="icons">
+         <a href="solar.html" th:href="@{/solar}">     <img class="icon2" src="../static/images/solar-204.jpg" th:src="@{images/solar-204.jpg}"  alt="icon" /> </a>
+        <a href="hydro.html" th:href="@{/hydro}"  >     <img class="icon2" src="../static/images/hydro-204.jpg" th:src="@{images/hydro-204.jpg}" alt="icon" /></a>
+        <a href="wind.html" th:href="@{/wind}"  >   <img class="icon3" src="../static/images/wind-204.jpg"   th:src="@{images/wind-204.jpg}"  alt="icon" /></a>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</mainindex>
+
+
+
+
+<form th:action="@{index}" method="post" th:object="${energyUser}" id="xa">
+
+    <div   class="container"  >
+
+        <h3 >Sign Up </h3>
+
+        <label for="fname" ><b>FirstName</b></label>
+        <input type="text" placeholder="Enter First Name" name="name" required id="fname"
+               pattern="[A-Za-z]*"  title="Your name must contain only letters." th:field="*{firstName}">
+
+        <label  for="lname"><b>LastName</b></label>
+        <input  type="text" placeholder="Enter LastName" name="name" required id="lname"
+                pattern="[A-Za-z]*"  title="Your name must contain only letters." th:field="*{lastName}">
+
+        <label  for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required id="email"  th:field="*{email}">
+
+        <label  for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required id="psw" th:field="*{password}">
+        <div  class="clearfix">
+
+            <button  type="submit" value="Register" class="signupbtn">Sign Up</button>
+        </div>
+    </div>
+
+</form>
+
+
+
+
+
+</body>
+</html>

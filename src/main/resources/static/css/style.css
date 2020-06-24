@@ -1,0 +1,479 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/b2.jpg");
+    font-family: 'DejaVu Sans Mono',Calibri Light, Helvetica, sans-serif;
+}
+
+
+
+header {
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+header img {
+    width: 100%;
+    filter: brightness(80%);
+    alignment: center;
+}
+mainindex {
+    margin: 0 auto;
+    max-width: 60rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: min-content;
+    grid-gap: 1rem;
+
+}
+.class1 {
+    grid-column: 3 / 10;
+    grid-row: 18;
+    height: 100%;
+    width:100%;
+
+}
+main {
+    margin: 0 auto;
+    max-width: 60rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: min-content;
+    grid-gap: 1rem;
+    background-color: azure;
+}
+header h2 {
+    position: absolute;
+    top:10%;
+    left: 50%;
+    text-align: center;
+    color: darkslateblue;
+    font-style: initial;
+    transform: translate(-50%,-50%);
+    font-size: 4rem;
+    font-weight: bold;
+
+
+}
+header h1 {
+    position: absolute;
+    top:30%;
+    left: 50%;
+    text-align: center;
+    color: cadetblue;
+    font-style: initial;
+    transform: translate(-50%,-50%);
+    font-size: 2rem;
+    font-weight: bold;
+
+
+}
+
+nav {
+    grid-column: 1 / 3 ;
+    grid-row: 16;
+
+}
+
+article {
+    grid-column: 3 / 10;
+    grid-row: 16;
+background-color:gray();
+    /* position: absolute;
+ left: 17%;
+ top:40%;
+
+     width: 55%; */
+}
+
+dh{
+    grid-column: 10 / 12;
+    grid-row: 16;
+    height: 900%;
+    width: 100%;
+}
+.dh button{
+    grid-column: 10 / 12;
+    grid-row: 16;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+
+}
+
+.icons {
+
+   /* position: absolute;
+    bottom:5%;
+    right: 15%;
+    */
+    position:relative;
+    grid-column: 3/12;
+    grid-row: 18;
+    padding: 2px;
+
+
+
+}
+.icons img:hover{
+    filter:grayscale(100%);
+    transform:scale(1.1);
+
+}
+
+.icon img {
+    display: inline-block;
+    vertical-align: middle;
+    margin:0 2em;
+    width:20%;
+
+}
+
+
+
+
+
+section {
+    grid-column: 4 / -1;
+}
+.images {
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+
+}
+.video {
+    grid-row: 17;
+    grid-column: 3 / 10;
+}
+section img {
+    width: 10%;
+    height: auto;
+}
+
+
+ul {
+
+    list-style-type: none;
+    text-align: left;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding:0;
+  /*  top: 40%;
+    position: absolute;
+    margin: 0;
+    padding:0;
+    width: 15%; */
+
+
+}
+
+
+
+footer {
+    text-align: center;
+    grid-column: 1 / -1;
+    grid-row: 3;
+}
+
+nav li {
+    list-style-type:none;
+    margin:0;
+    padding:0
+}
+p{
+    color: black;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+}
+.p img{
+    float:right;
+    alignment: right;
+}
+img:hover{
+    -webkit-transform: scale(2,2)
+}
+
+li a {
+    display: block;
+text-align: left;
+    color: black;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: green;
+    color: white;
+}
+
+.active {
+    background-color: green;
+    color: white;
+}
+
+.dropbtn {
+    background-color: #f1f1f1;
+    list-style-type: none;
+    cursor: pointer;
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+
+    background-color: #f9f9f9;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding:0.2rem;
+    margin-right:0.1rem;
+    margin-bottom:0.1rem;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: snow}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: green;
+}
+
+
+.responsive {
+    max-width: 100%;
+}
+
+input[type=number]{
+    font-size: 1.2rem;
+}
+i{list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+}
+
+#result {
+    font-size: 1.2rem;
+}
+/* Profile Table  */
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+border: green;
+    width: 100%;
+    position: relative;
+
+
+}
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 18px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+
+
+/* Create Registration  */
+h5{  position: absolute;
+    top: 20%;
+    right: 10%;
+
+    text-align: center;
+    color:darkslategray;
+    font-weight: bold;
+    font-size: 2rem;
+    font-style: revert;}
+/* Full-width input fields */
+input[type=text], input[type=password],input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus,input[type=email]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+.dh button:hover{
+    opacity:1;
+}
+
+
+
+/* Float  signup button and add  width */
+ .signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 0;
+height: 25%;
+    width:25%;
+    position: absolute;
+    bottom:48%;
+    right:10%;
+
+
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for  signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-device-width: 30rem) {
+    nav {
+        grid-column: 1 / -1;
+
+    }
+
+    nav ul {
+        display: flex;
+
+
+
+    }
+
+    nav a {
+     font-size: 2.2rem;
+        padding: 1rem;
+
+    }
+
+
+
+    article {
+        grid-column: 1 / -1;
+        grid-row: 3;
+    }
+
+    section {
+        grid-column: 1 / -1;
+    }
+
+    .images {
+        grid-row: 4;
+    }
+
+
+
+    footer {
+        grid-row: 6;
+    }
+
+
+}
+.dropdownlink a {
+    display:block;
+    background-color: #FF0E2E;
+    color:#ffffff;
+    padding:0.2rem;
+    margin-right:0.1rem;
+    margin-bottom:0.1rem;
+    text-decoration: underline;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.menuitems {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.menuitems a {
+    display:block;
+    background-color: #FF0E2E;
+    color:#ffffff;
+    padding:0.2rem;
+    margin-right:0.1rem;
+    margin-bottom:0.1rem;
+}

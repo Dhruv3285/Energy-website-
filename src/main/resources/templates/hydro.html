@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <style> body{background: darkgrey}</style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+    <title>Title</title>
+</head>
+<body>
+<main>
+    <header>
+
+        <h2>Hydro</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"th:href="@{/index}">Home </a></li>
+            <li><a href="profile.html" th:href="@{/profile}"> Profile</a></li>
+            <li><a href="enter.html" th:href="@{/enter}">Calculate</a></li>
+
+
+        </ul>
+    </nav>
+    <article>
+        <h2>Introduction</h2>
+        <p>By taking advantage of gravity and the water cycle, we have tapped into one of nature's engines to create a useful form of energy. In fact, humans have been capturing the energy of moving water for thousands of years. Today, harnessing the power of moving water to generate electricity, known as hydroelectric power, is the largest source of emissions-free, renewable electricity in the United States and worldwide.</p>
+        <h2>Details</h2>
+        <img src="../static/images/hydro2.jpg" height="200px" width="220px" ALIGN="right"  th:src="@{/images/hydro2.jpg}" alt="hydro"/>
+        <p>In order to generate electricity from the kinetic energy in moving water, the water has to move with sufficient speed and volume to spin a propeller-like device called a turbine, which in turn rotates a generator to generate electricity. Roughly speaking, one gallon of water per second falling one hundred feet can generate one kilowatt of electricity. To increase the volume of moving water, impoundments or dams are used to collect the water. An opening in the dam uses gravity to drop water down a pipe called a penstock. The moving water causes the turbine to spin, which causes magnets inside a generator to rotate and create electricity.</p>
+
+        <h2>Downfall</h2>
+
+        <p>Although the generation of hydropower does not emit air pollution or greenhouse gas emissions, it can have negative environmental and social consequences. Blocking rivers with dams can degrade water quality, damage aquatic and riparian habitat, block migratory fish passage, and displace local communities. The benefits and drawbacks of any proposed hydropower development must be weighed before moving forward with any project. Still, if it's done right, hydropower can be a sustainable and nonpolluting source of electricity that can help decrease our dependence on fossil fuels and reduce the threat of global warming.</p>
+
+    </article>
+
+
+    <section class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pEUzot8Zufo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+</main>
+</body>
+</html>
